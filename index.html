@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloraSense</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ECEAFD;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ECEAFD;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            width: 400px;
+            height: 120px;
+            vertical-align: middle;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .form-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .form-section h3 {
+            text-align: center;
+            color: #7554C2;
+        }
+        form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #7554C2;
+        }
+        form input, form select, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #B2A0DE;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+        form button:hover {
+            background-color: #A28FD9;
+        }
+        .database-display {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #7554C2;
+        }
+        #flower-database {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .flower-card {
+            background-color: #ECEAFD;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 200px;
+            text-align: center;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            background-color: #ECEAFD;
+        }
+        footer img {
+            width: 100%;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Flower Logo">
+    </header>
+
+    <div class="container">
+
+        <!-- Add Flower Data Form -->
+        <div class="form-section">
+            <h3>Add Flower Data</h3>
+            <form id="flower-form">
+                <label for="sepal_length">Sepal Length (cm):</label>
+                <input type="number" step="0.01" id="sepal_length" name="sepal_length" required>
+                
+                <label for="sepal_width">Sepal Width (cm):</label>
+                <input type="number" step="0.01" id="sepal_width" name="sepal_width" required>
+                
+                <label for="petal_length">Petal Length (cm):</label>
+                <input type="number" step="0.01" id="petal_length" name="petal_length" required>
+                
+                <label for="petal_width">Petal Width (cm):</label>
+                <input type="number" step="0.01" id="petal_width" name="petal_width" required>
+                
+                <label for="flower_type">Flower Type:</label>
+                <select id="flower_type" name="flower_type" required>
+                    <option value="">Select Flower Type</option>
+                    <option value="Iris-setosa">Iris-setosa</option>
+                    <option value="Iris-versicolor">Iris-versicolor</option>
+                    <option value="Iris-virginica">Iris-virginica</option>
+                </select>
+
+                <button type="submit">Add Flower</button>
+            </form>
+        </div>
+
+        <!-- Add Flower Category -->
+        <div class="form-section">
+            <h3>Add Flower Category</h3>
+            <form id="category-form">
+                <label for="flower_category">New Flower Category:</label>
+                <input type="text" id="flower_category" name="flower_category" required>
+                <button type="submit">Add Category</button>
+            </form>
+        </div>
+
+        <!-- Database Display -->
+        <div class="database-display">
+            <h3>Database</h3>
+            <div id="flower-database"></div>
+        </div>
+
+    </div>
+
+    <!-- Footer with Floral Border -->
+    <footer>
+        <img src="footer-florals.png" alt="Floral Border">
+    </footer>
+
+    <!-- Link the External JavaScript File -->
+    <script src="main.js"></script>
+
+</body>
+</html>
