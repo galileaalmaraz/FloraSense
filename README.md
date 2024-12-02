@@ -32,6 +32,7 @@ To get FloraSense up and running on your local machine, follow these steps:
 ```bash
 git clone https://github.com/yourusername/FloraSense.git
 cd FloraSense
+```
 
 ### 2. Install Dependencies
 ```bash
