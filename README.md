@@ -37,6 +37,7 @@ cd FloraSense
 ### 2. Install Dependencies
 ```bash
 npm install
+```
 
 ### 3. Set Up The Database
 1. Create a MySQL database named florasense.
@@ -55,9 +56,13 @@ const db = mysql.createPool({
     connectionLimit: 10,
     queueLimit: 0,
 });
-
+```
 ---
 
 ### 4. Start the Server
 ```bash
 node server.js
+```
+### 5. Open the Frontend
+1. Open the index.html file in your browser (or use a live server like VS Code Live Server).
+2. Interact with the app!
