@@ -66,3 +66,7 @@ node server.js
 ### 5. Open the Frontend
 1. Open the index.html file in your browser (or use a live server like VS Code Live Server).
 2. Interact with the app!
+
+# Demo
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=R2GLW-s5fV8)
+
